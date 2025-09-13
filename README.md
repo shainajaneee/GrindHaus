@@ -1,19 +1,26 @@
-# GrindHaus - Coffee Shop Landing Page ☕🏠
+# GrindHaus - Coffee Landing Page
 
-A modern and responsive landing page for a fictional coffee shop, **GrindHaus**, designed with **HTML and CSS**. This project highlights clean design, appealing visuals, and responsive layout for web presentation.
+A modern, responsive landing page for **GrindHaus**, a coffee shop, perfect for portfolios or small business websites. This page showcases coffee specials, customer testimonials, and a contact form.
 
----
+## Features
 
-## 🌟 Features
+- **Responsive Design:** Fully optimized for desktop, tablet, and mobile screens.
+- **Hero Section:** Welcoming banner with a call-to-action button.
+- **Menu Section:** Display your coffee specials with images and descriptions.
+- **Testimonials Carousel:** Swipe through customer feedback with star ratings.
+- **Login/Sign-Up Modal:** Interactive modal for user authentication (mockup).
+- **Contact Section:** Aside-style layout with contact information and form.
+- **Footer:** Includes Privacy Policy & Terms of Service links.
+- **Mobile-Friendly Navigation:** Hamburger menu for smaller screens.
 
-- **Hero Section:** Full-screen banner with call-to-action button.  
-- **Menu Section:** Featured coffee drinks with high-quality images.  
-- **About Us Section:** Brand storytelling to engage visitors.  
-- **Contact Section:** Front-end contact form for visitor inquiries.  
-- **Responsive Design:** Optimized for desktop, tablet, and mobile devices.  
-- **Modern UI/UX:** Stylish colors, typography, and layout.
+## Technologies Used
 
----
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome Icons
 
-## 📂 Project Structure
+## Demo
+
+You can view the live demo here: https://grindhaus.netlify.app/
 
