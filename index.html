@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrindHaus - Coffee Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrindHaus - Coffee Landing Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <h1>GrindHaus</h1>
-    <ul>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navbar -->
+<nav>
+  <h1>GrindHaus</h1>
+  <span class="hamburger" id="hamburger"><i class="fa fa-bars"></i></span>
+  <ul id="navMenu">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" id="loginBtn">Login / Sign Up</a></li>
+  </ul>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to GrindHaus</h1>
-    <p>Crafting happiness, one cup at a time ☕</p>
-    <button class="btn">Order Now</button>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Welcome to GrindHaus</h1>
+  <p>Crafting happiness, one cup at a time ☕</p>
+  <button class="btn">Order Now</button>
+</section>
 
-  <!-- Menu Section -->
-  <section class="menu" id="menu">
-    <h2>Our Specials</h2>
-    <div class="menu-items">
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Espresso">
-        <h3>Espresso</h3>
-        <p>Rich and bold flavor, freshly brewed.</p>
+<!-- Menu Section -->
+<section class="menu" id="menu">
+  <h2>Our Specials</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Espresso">
+      <h3>Espresso</h3>
+      <p>Rich and bold flavor, freshly brewed.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <p>Creamy froth with a smooth coffee blend.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80" alt="Latte">
+      <h3>Latte</h3>
+      <p>Perfect mix of milk and espresso.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" alt="Mocha">
+      <h3>Mocha</h3>
+      <p>Chocolate and coffee in one delightful cup.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    At <strong>GrindHaus</strong>, we believe coffee is more than just a drink — it's a ritual, an energy boost, and a moment of connection. Our beans are sourced from the finest farms, roasted with passion, and brewed to perfection. Whether you’re here to grab a quick espresso or to unwind with a latte, GrindHaus is your cozy escape from the hustle of daily life.
+  </p>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial-track">
+      <div class="testimonial-item">
+        <p>"The cappuccino is creamy perfection! Love this place."</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <strong>- Anna S.</strong>
       </div>
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
-        <h3>Cappuccino</h3>
-        <p>Creamy froth with a smooth coffee blend.</p>
+      <div class="testimonial-item">
+        <p>"Fast service and the espresso hits the spot every morning."</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <strong>- James K.</strong>
       </div>
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80" alt="Latte">
-        <h3>Latte</h3>
-        <p>Perfect mix of milk and espresso.</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" alt="Mocha">
-        <h3>Mocha</h3>
-        <p>Chocolate and coffee in one delightful cup.</p>
+      <div class="testimonial-item">
+        <p>"Cozy ambiance and delicious mocha. Highly recommend!"</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <strong>- Lisa M.</strong>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="testimonial-nav">
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2>About Us</h2>
-    <p>
-      At <strong>GrindHaus</strong>, we believe coffee is more than just a drink — it's a ritual, 
-      an energy boost, and a moment of connection. Our beans are sourced from the finest farms, 
-      roasted with passion, and brewed to perfection. Whether you’re here to grab a quick espresso 
-      or to unwind with a latte, GrindHaus is your cozy escape from the hustle of daily life.
-    </p>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-left">
+    <h2>Connect With Us</h2>
+    <p>Email: contact@grindhaus.com</p>
+    <p>Contact Number: +63 912 345 6789</p>
+    <p>Location: Manila, Philippines</p>
+  </div>
+  <div class="contact-right">
+    <h2>Contact Form</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 GrindHaus. All rights reserved.</p>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 GrindHaus. All rights reserved.</p>
+  <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <h2>Login / Sign Up</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <div class="modal-switch" id="switchToSignUp">Don't have an account? Sign Up</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
